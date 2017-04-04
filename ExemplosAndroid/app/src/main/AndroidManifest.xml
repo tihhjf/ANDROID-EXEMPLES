@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -18,15 +21,16 @@
             android:value="AIzaSyBBFkYDiscODdm_JnUVrZsd0nqQX57gIOk" />
 
         <activity
-            android:name="com.example.tpsales.exemplosAndroid.MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-        <activity android:name="com.example.tpsales.exemplosAndroid.Principal">
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FotoActivity"></activity>
     </application>
 
 </manifest>
